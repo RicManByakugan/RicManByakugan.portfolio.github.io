@@ -115,3 +115,8 @@
     
 })(jQuery);
 
+function ShowImage(imageSrc) {
+    var image = document.getElementById('image-modal-show');
+    image.src = "";
+    image.src = imageSrc;
+}

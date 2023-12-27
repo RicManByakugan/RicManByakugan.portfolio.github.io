@@ -1,41 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <meta charset="utf-8">
+    <title>Ratovonirina Eric</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link href="img/profile-rbg.png" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Your page content goes here -->
+    <div class="modal fade" id="imageModalLabel">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <img src="" class="w-100" id="image-modal-show">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>English</h1>
-    <button onclick="changeLanguage('es')">Change to English</button>
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#Profil" class="nav-item nav-link active">Profil</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#pro" class="nav-item nav-link">Professional experience</a>
+                <a href="#education" class="nav-item nav-link">Educations</a>
+                <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
+            </div>
+        </div>
+    </nav>
 
-    <!-- Your page content goes here -->
+    <div class="bg-primary d-flex align-items-center" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Ratovonirina</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none text-uppercase">WEB DEVELOPER, DESKTOP DEVELOPER, MOBILE DEVELOPER</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="Ratovonirina-CV.pdf" class="btn btn-outline-light">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div id="Profil">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Profil</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Profil</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">IT Developer</h3>
+                    <p>Passionate about the world of IT development and entrepreneurship. Dynamic and always ready to take on new challenges and experience new adventures. A leader has a creative mind who always focuses and ensures the tasks to be accomplished</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Ratovonirina Eric</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">08 August 2001</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master II</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience with development: <span class="text-secondary">4 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+261 34 24 877 19</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+261 32 67 925 59</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">eric.ratovonirina@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Ambohidratrimo, Antananarivo, Madagascar</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        function changeLanguage(languageCode) {
-            // Change the language using Google Translate API
-            googleTranslateElementInit(languageCode);
-        }
-    </script>
-    <script>
-        function googleTranslateElementInit(defaultLanguage) {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',  // Default language of your page
-                includedLanguages: '', // Leave empty to include all languages
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
+    <div id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-1">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-1">
+                            <small>I have already developed some application web using PHP native and MVC practice with this language for backend development.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-2">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-2">
+                            <small>Combined with PHP, i've update and create some application web. Using AJAX library to send data and control  Document Object Model (DOM) for frontend development.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Java</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-3">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-3">
+                            <small>Backend and frontend development. I've developed some desktop application. Ready to use. The user just installs the software by clicking an <b>.exe</b> file and another tool to run the software.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-4">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-4">
+                            <small>For dekstop frontend, and machine learning development.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-5">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-5">
+                            <small>For dekstop development and a little game i've developed for knowing the language.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Symfony</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-7">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-7">
+                            <small>PHP Framework, still learning more about PHP technology. It’s also the language I use a lot</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">ReactJS</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-8">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-8">
+                            <small>For creating a web application. I use this framework with JavaScript or with TypeScript</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">React Native</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-9">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-9">
+                            <small>For creating a mobile application. I use this framework with JS or with TypeScript too.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">NodeJS</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-10">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-10">
+                            <small>For creating a web application from the backend development. I use Express JS framework. Create a REST API backend for the web application.</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Flutter</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-11">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-11">
+                            <small>For creating a mobile application. I use this technology with DART language.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">SQL</h6>
+                            <h6 class="font-weight-bold">89%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-12">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-12">
+                            <small>Language that I use to use data from a database. I often combine this language to create an application that uses a database</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MYSQL DATABASE</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-13">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-13">
+                            <small>Relational database that I use as a database</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MONGODB</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-14">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-14">
+                            <small>NOSQL database that I use as a database</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">GIT</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-15">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-15">
+                            <small>Development tool that I have been using since 2022</small>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">DOCKER</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small data-toggle="collapse" style="cursor: pointer;" data-target="#skill-rato-16">More...</small>
+                        <div class="text-muted collapse" id="skill-rato-16">
+                            <small>Development tool that I have been using since 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pro">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Professional</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Professional experience</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">STARTUP INFO-DEV</h5>
+                            <p class="mb-2"><small><strong>2023 - To this day</strong></small></p>
+                            <p>Founder of the startup that specializes in IT development.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">LYCEE TECHNIQUE AMBOHIDRATRIMO</h5>
+                            <p class="mb-2"><small><strong>2022 - To this day</strong></small></p>
+                            <p>French language teacher.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">GSL COMPANY</h5>
+                            <p class="mb-2"><small><strong>2021 - To this day | <a href="https://github.com/RicManByakugan/GSL" target="_blank">Link</a></strong></small></p>
+                            <p>Manager and developer of web application to manage all stock from an AMBOHIDRATRIMO store</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">CANAL PLUS MADAGASCAR</h5>
+                            <p class="mb-2"><small><strong>2019 - To this day</strong></small></p>
+                            <p>Canal plus technician with identifier 3066 at AMBOHIDRATRIMO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">WEBSITE : FLM 105</h5>
+                            <p class="mb-2"><small><strong>2020 - To this day</strong></small></p>
+                            <p>Web application developer for managing Christians at FLM Ambohidratrimo</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">GCP APPLICATION</h5>
+                            <p class="mb-2"><small><strong>2019 - To this day | <a href="https://github.com/RicManByakugan/CP2.0" target="_blank">Link</a></strong></small></p>
+                            <p>Developer of point-of-sale software AMBOHIDRATRIMO.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">WEBSITE : SUR (Solution Unique et Rapide)</h5>
+                            <p class="mb-2"><small><strong>2021 - 2022 | <a href="https://github.com/RicManByakugan/SurProject" target="_blank">Link</a></strong></small></p>
+                            <p>Co-founder and developer of startup e-commerce S.U.R (surmada.com)</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">RANDEVTEAM</h5>
+                            <p class="mb-2"><small><strong>2021</strong></small></p>
+                            <p>Intern: Native JavaScript Developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="education">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Educations</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Educations</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">IT UNIVERSITY</h5>
+                            <p class="mb-2"><small><strong>2022 - To this day</strong></small></p>
+                            <p>Master MBDS: Mobiquity, Database and Systems Integration</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">CANAL PLUS MADAGASCAR</h5>
+                            <p class="mb-2"><small><strong>2019 - To this day</strong></small></p>
+                            <p>Technician and trader canal plus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">GSI UNIVERSITY</h5>
+                            <p class="mb-2"><small><strong>2019 - 2022</strong></small></p>
+                            <p>Licence's degree in management informatics</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">ENGLISH LANGUAGE</h5>
+                            <p class="mb-2"><small><strong>2019</strong></small></p>
+                            <p>Study of the English language</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">LYCEE AMBOHIDRATRIMO</h5>
+                            <p class="mb-2"><small><strong>2018</strong></small></p>
+                            <p>D series high school diploma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Application</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">ALL</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">GCP</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">FLM</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">GSL</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".four">AGRICODE</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".five">SUR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gcp/gcp.png" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gcp/gcp.png')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gcp/GCP1.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gcp/GCP1.png')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gcp/gcp2.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gcp/gcp2.png')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gcp/gcp3.png" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gcp/gcp3.png')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/FLM.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/FLM.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/flm2.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/flm2.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/FLM3.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/FLM3.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/flm4.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/flm4.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/FLM5.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/FLM5.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/flm/flm6.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/flm/flm6.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gsl/STOCK.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gsl/STOCK.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gsl/STOCK2.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gsl/STOCK2.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gsl/STOCK23.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gsl/STOCK23.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gsl/STOCK234.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/gsl/STOCK234.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoAlert.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoAlert.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoDetaille.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoDetaille.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoGuide.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoGuide.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoInterface.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoInterface.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoMeteoCalendrier.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoMeteoCalendrier.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item four">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/agricode/DemoPays.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/agricode/DemoPays.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-4.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-4.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-1.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-1.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-2.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-2.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-3.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-3.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-5.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-5.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-6.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-6.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK-7.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK-7.PNG')">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 portfolio-item five">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/sur/SUR-BACK.PNG" data-toggle="modal" data-target="#imageModalLabel" onclick="ShowImage('img/sur/SUR-BACK.PNG')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://web.facebook.com/Byakugan.64"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/eric-ratovonirina-a5480a1bb/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="index.html">Ratovonirina</a>. All Rights Reserved. <a class="text-white font-weight-bold">2023</a>
+            </p>
+        </div>
+    </div>
+
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
     
-            // Set the default language
-            var select = document.querySelector(".goog-te-combo");
-            select.value = defaultLanguage;
-            select.dispatchEvent(new Event("change"));
-        }
-    </script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
-    
